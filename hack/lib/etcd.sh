@@ -88,7 +88,6 @@ kube::etcd::start() {
 
   echo "Waiting for etcd to come up."
   kube::util::wait_for_url "${KUBE_INTEGRATION_ETCD_URL}/health" "etcd: " 0.25 80
-  curl -fs -X POST "${KUBE_INTEGRATION_ETCD_URL}/v3/kv/put" -d '{"key": "X3Rlc3Q=", "value": ""}'
 }
 
 kube::etcd::start_scraping() {
