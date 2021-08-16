@@ -1,4 +1,4 @@
-// +build linux,!nokmem
+// +build linux,ignore
 
 package fs
 
