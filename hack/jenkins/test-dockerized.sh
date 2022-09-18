@@ -47,7 +47,6 @@ export LOG_LEVEL=4
 
 cd "${GOPATH}/src/k8s.io/kubernetes"
 
-make generated_files
 ./hack/install-etcd.sh
 
 make test-cmd
